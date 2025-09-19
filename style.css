@@ -1,0 +1,35 @@
+.gradient-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.scan-animation {
+    animation: scan 2s ease-in-out;
+}
+
+@keyframes scan {
+    0% { 
+        transform: translateY(100%); 
+        opacity: 0; 
+    }
+    50% { 
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+    100% { 
+        transform: translateY(-100%); 
+        opacity: 0; 
+    }
+}
+
+.pulse-ring {
+    animation: pulse-ring 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+@keyframes pulse-ring {
+    0% { 
+        transform: scale(0.33); 
+    }
+    80%, 100% { 
+        opacity: 0; 
+    }
+}
